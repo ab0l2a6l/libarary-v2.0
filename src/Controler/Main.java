@@ -1,4 +1,5 @@
 package Controler;
+
 import Common.Show;
 import Modle.repository.BookDAO;
 import Modle.repository.InterfaceDAO;
@@ -10,7 +11,7 @@ public class Main {
         InterfaceDAO interfaceDAO;
         byte selectBookORPerson;
 
-        for (;;) {
+        for (; ; ) {
             selectBookORPerson = Show.menu();
             switch (selectBookORPerson) {
                 case 1 -> {
@@ -23,8 +24,7 @@ public class Main {
                     interfaceDAO.save();
                 }
 
-                case 3 ->
-                {
+                case 3 -> {
                     return;
                 }
                 default -> System.out.println("wrong number try again!!!");

@@ -23,14 +23,15 @@ public class PersonDAO implements InterfaceDAO {
         saveInformation();
         showResult();
     }
-    private void showResult(){
+
+    private void showResult() {
         if (isSave == 1)
             System.out.println("information is saved");
     }
 
     private void saveInformation() {
         if (isSave == 1)
-        personList.add(person);
+            personList.add(person);
     }
 
     private void getPersonSexualityFromUser() {
@@ -46,16 +47,19 @@ public class PersonDAO implements InterfaceDAO {
                 person.setSexuality(Sexuality.FEMALE);
 
         } catch (Exception e) {
+            isSave = 0;
             System.out.println(e.getMessage());
         }
+        if (isSave == 1) {
+            System.out.println("1.Librarian\n2.buyer");
+            temp = StaticScanner.getDada().nextByte();
+            try {
+                Exceptions.validateLibrarianOrBuyer(temp);
 
-        System.out.println("1.Librarian\n2.buyer");
-        temp = StaticScanner.getDada().nextByte();
-        try {
-            Exceptions.validateLibrarianOrBuyer(temp);
-
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+            } catch (Exception e) {
+                isSave = 0;
+                System.out.println(e.getMessage());
+            }
         }
     }
 

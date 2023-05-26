@@ -1,4 +1,5 @@
 package Common;
+
 import java.util.Scanner;
 
 public class StaticScanner {
