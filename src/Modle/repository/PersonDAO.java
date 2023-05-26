@@ -6,7 +6,7 @@ import Modle.exception.Exceptions;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PersonDAO implements InterfaceDAO{
+public class PersonDAO implements InterfaceDAO {
     List<Person> personList = new ArrayList<>();
     Person person = new Person();
     byte temp;
