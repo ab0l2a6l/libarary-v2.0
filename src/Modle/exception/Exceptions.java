@@ -11,7 +11,7 @@ public class Exceptions {
             throw new Exception("number must be 1, 2 ");
     }
 
-    public static void validetLibrarianOrBuyer(byte temp) throws Exception {
+    public static void validateLibrarianOrBuyer(byte temp) throws Exception {
         if (temp != 2)
             throw new Exception("you can just a buyer");
     }

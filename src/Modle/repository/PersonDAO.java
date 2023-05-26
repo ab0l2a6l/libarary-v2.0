@@ -44,7 +44,7 @@ public class PersonDAO implements InterfaceDAO {
         System.out.println("1.Librarian\n2.buyer");
         temp = StaticScanner.getDada().nextByte();
         try {
-            Exceptions.validetLibrarianOrBuyer(temp);
+            Exceptions.validateLibrarianOrBuyer(temp);
 
         } catch (Exception e) {
             System.out.println(e.getMessage());

@@ -1,10 +1,8 @@
 package Modle.repository;
-
 import Common.StaticScanner;
 import Modle.entity.Book;
 import Modle.entity.Genre;
 import Modle.exception.Exceptions;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -58,5 +56,4 @@ public class BookDAO implements InterfaceDAO {
         System.out.print("insert book id: ");
         book.setId(StaticScanner.getDada().nextLong());
     }
-
 }

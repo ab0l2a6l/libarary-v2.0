@@ -11,6 +11,4 @@ public class Book extends Entity {
     public void setGenre(Genre genre) {
         this.genre = genre;
     }
-
-
 }

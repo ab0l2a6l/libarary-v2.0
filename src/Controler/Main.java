@@ -1,7 +1,5 @@
 package Controler;
-
 import Common.Show;
-import Common.StaticScanner;
 import Modle.repository.BookDAO;
 import Modle.repository.InterfaceDAO;
 import Modle.repository.PersonDAO;
