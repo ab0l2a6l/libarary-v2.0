@@ -1,14 +1,17 @@
 package Modle.repository;
+
 import Common.StaticScanner;
 import Modle.entity.Book;
 import Modle.entity.Genre;
 import Modle.exception.Exceptions;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class BookDAO implements InterfaceDAO {
     List<Book> bookList = new ArrayList<>();
     byte temp;
+    byte isSave = 1;
     Book book = new Book();
 
     @Override
@@ -18,14 +21,20 @@ public class BookDAO implements InterfaceDAO {
         getBookAuthorFromUser();
         getBookGenreFromUser();
         saveInformation();
-        System.out.println("information is saved");
+        showResult();
     }
 
-    public void saveInformation() {
-        bookList.add(book);
+    private void showResult() {
+        if (isSave == 1)
+            System.out.println("information is saved");
     }
 
-    public void getBookGenreFromUser() {
+    private void saveInformation() {
+        if (isSave == 1)
+            bookList.add(book);
+    }
+
+    private void getBookGenreFromUser() {
         System.out.print("insert genre (1.dram 2.historical 3.scientific): ");
         temp = StaticScanner.getDada().nextByte();
         try {
@@ -38,21 +47,22 @@ public class BookDAO implements InterfaceDAO {
             else if (temp == 3)
                 book.setGenre(Genre.SCIENTIFIC);
         } catch (Exception e) {
+            isSave = 0;
             System.out.println(e.getMessage());
         }
     }
 
-    public void getBookAuthorFromUser() {
+    private void getBookAuthorFromUser() {
         System.out.print("insert author: ");
         book.setAuthor(StaticScanner.getDada().nextLine());
     }
 
-    public void getBookNameFromUser() {
+    private void getBookNameFromUser() {
         System.out.print("insert book name: ");
         book.setName(StaticScanner.getDada().nextLine());
     }
 
-    public void getBookIdFromUser() {
+    private void getBookIdFromUser() {
         System.out.print("insert book id: ");
         book.setId(StaticScanner.getDada().nextLong());
     }

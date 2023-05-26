@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fac703c-26bd-4191-95f1-fb803107bfd6" name="Changes" comment="kotah kardan dastorat">
+    <list default="true" id="3fac703c-26bd-4191-95f1-fb803107bfd6" name="Changes" comment="edit name(validateLibrarianOrBuyer)&#10;va pak kardan code haye ezafi&#10;va pak kardan fasele ha ye ezafi">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Modle/repository/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modle/repository/BookDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modle/repository/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modle/repository/PersonDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685091360447</updated>
-      <workItem from="1685091362917" duration="8371000" />
+      <workItem from="1685091362917" duration="9623000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1685097610685</created>
@@ -80,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685099930271</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="edit name(validateLibrarianOrBuyer)&#10;va pak kardan code haye ezafi&#10;va pak kardan fasele ha ye ezafi">
+      <created>1685100343312</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685100343312</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +109,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a" />
     <MESSAGE value="kotah kardan dastorat" />
-    <option name="LAST_COMMIT_MESSAGE" value="kotah kardan dastorat" />
+    <MESSAGE value="edit name(validateLibrarianOrBuyer)&#10;va pak kardan code haye ezafi&#10;va pak kardan fasele ha ye ezafi" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit name(validateLibrarianOrBuyer)&#10;va pak kardan code haye ezafi&#10;va pak kardan fasele ha ye ezafi" />
   </component>
 </project>

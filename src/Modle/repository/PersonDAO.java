@@ -1,14 +1,17 @@
 package Modle.repository;
+
 import Common.StaticScanner;
 import Modle.entity.Person;
 import Modle.entity.Sexuality;
 import Modle.exception.Exceptions;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class PersonDAO implements InterfaceDAO {
     List<Person> personList = new ArrayList<>();
     Person person = new Person();
+    byte isSave = 1;
     byte temp;
 
     @Override
@@ -18,10 +21,15 @@ public class PersonDAO implements InterfaceDAO {
         getPersonAgeFromUser();
         getPersonSexualityFromUser();
         saveInformation();
-        System.out.println("information is saved");
+        showResult();
+    }
+    private void showResult(){
+        if (isSave == 1)
+            System.out.println("information is saved");
     }
 
     private void saveInformation() {
+        if (isSave == 1)
         personList.add(person);
     }
 
